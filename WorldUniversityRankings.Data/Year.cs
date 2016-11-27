@@ -9,6 +9,7 @@ namespace WorldUniversityRankings.Data
 {
     public class Year
     {
+        public int year { get; set; }
         public int Id { get; set; }
         public int WorldRank { get; set; }
         public int NationalRank { get; set; }
@@ -21,8 +22,6 @@ namespace WorldUniversityRankings.Data
         public int BroadImpact { get; set; }
         public int Patents { get; set; }
         public double Score { get; set; }
-
-        [Required]
-        public List<Location> Locations { get; set; }
+        public Institution Institution { get; set; }
     }
 }
